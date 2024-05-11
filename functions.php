@@ -11,4 +11,5 @@ new Menu;
 new GoToTop;
 new PostType;
 new RemoveCate;
-
+new Shortcode;
+new Ajax;

@@ -1,16 +1,16 @@
 <?php get_header(); ?>
 
 <div class="container">
-
+	<?= do_shortcode( '[form_search_bds]' ) ?>
 	<?php if ( have_posts() ) : ?>
 
 		<div class="entries">
-		<?php
-		while ( have_posts() ) {
-			the_post();
-			get_template_part( 'template-parts/content' );
-		}
-		?>
+			<?php
+			while ( have_posts() ) {
+				the_post();
+				get_template_part( 'template-parts/content' );
+			}
+			?>
 
 		</div>
 
